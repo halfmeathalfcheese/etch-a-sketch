@@ -12,7 +12,7 @@ body {
 .header h1 {
     font-size: 36px;
     font-weight: bold;
-    color: #fff;
+    color: #86f52c;
     margin-top: 0px;
     margin-bottom: 10px;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
@@ -23,8 +23,13 @@ body {
     color: whitesmoke;
     text-shadow: 1px 1px 2px grey;
 }
-  
 
+.header h3 {
+    font-size: 18px;
+    color: rgb(231, 230, 230);
+    text-shadow: 1px 1px 2px grey;
+}
+  
 .parent-container {
     display: flex;
     justify-content: center;
@@ -36,19 +41,83 @@ body {
 .grid-container {
     display: flex;
     flex-wrap: wrap;
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height: 600px;
     border: 1px solid grey;
     background-color: white;
     cursor: crosshair;
+    justify-content: center;
 }
 
 .grid-block {
     box-sizing: border-box;
 }
 
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
 #change-grid {
     margin-bottom: 25px;
-    padding: 5px;
     cursor: pointer;
+    padding: 8px 15px;
+}
+
+#reset {
+    margin-top: 12px;
+}
+
+.colour-selector {
+    display: flex;
+    flex-wrap: wrap;
+    width: 600px;
+    height: calc(600px / 8);
+    border: 1px solid black;
+    margin: auto;
+}
+
+.colour-block {
+    flex-basis: calc(100% / 8);
+    cursor: pointer;
+}
+
+.red {
+    background-color: red;
+}
+
+.yellow {
+    background-color: yellow;
+}
+
+.orange {
+    background-color: orange;
+}
+
+.greenyellow {
+    background-color: greenyellow;
+}
+
+.skyblue {
+    background-color: skyblue;
+}
+
+.plum {
+    background-color: plum;
+}
+
+.pink {
+    background-color: pink;
+}
+
+.black {
+    background-color: black;
 }
