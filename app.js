@@ -21,7 +21,8 @@ function changeGridColour(event) {
     }
 }
 
-function handleMouseDown() {
+function handleMouseDown(event) {
+    event.preventDefault();
     isMousePressed = true;
 }
 
