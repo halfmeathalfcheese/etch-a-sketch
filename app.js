@@ -34,7 +34,7 @@ function changeCurrentColour() {
 }
 
 function changeGridColour(event) {
-    if (isMousePressed && event.shiftKey) {
+    if ((isMousePressed && event.shiftKey) || (event.type === 'click' && event.shiftKey) {
         this.style.backgroundColor = 'white';
     } else if (isMousePressed || event.type === 'click') {
         this.style.backgroundColor = currentColour;
@@ -51,7 +51,7 @@ function handleMouseUp() {
 }
 
 function changeGridSize() {
-    let newSize = prompt('Please enter the new width/height of grid:');
+    let newSize = prompt('Please enter the new width/height of grid:', 32);
     const gridBlocks = document.querySelectorAll('.grid-block');
 
     gridBlocks.forEach(gridBlock => {
