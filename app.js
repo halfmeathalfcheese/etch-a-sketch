@@ -34,7 +34,7 @@ function changeCurrentColour() {
 }
 
 function changeGridColour(event) {
-    if ((isMousePressed && event.shiftKey) || (event.type === 'click' && event.shiftKey) {
+    if ((isMousePressed && event.shiftKey) || (event.type === 'click' && event.shiftKey)) {
         this.style.backgroundColor = 'white';
     } else if (isMousePressed || event.type === 'click') {
         this.style.backgroundColor = currentColour;
